@@ -77,7 +77,7 @@ class ChoreHelperCard extends HTMLElement {
     );
 
     if (chores.length === 0) {
-      this.content.innerHTML = `<p>No chores found.</p>`;
+      this.content.innerHTML = `<p>No to-do items found. Everything is complete for the day !</p>`;
       return;
     }
 
@@ -117,7 +117,7 @@ class ChoreHelperCard extends HTMLElement {
     
 
     if (filteredChores.length === 0) {
-      this.content.innerHTML = `<h1 class="card-header">Chores</h1><div class="card-content"><p>No chores matching the criteria were found.</p></div>`;
+      this.content.innerHTML = `<h1 class="card-header">Daily To-Do List</h1><div class="card-content"><p>No daily tasks left to complete today, check back tomorrow.</p></div>`;
       return;
     }
 
